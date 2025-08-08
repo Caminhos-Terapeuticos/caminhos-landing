@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Importância da Anamnese na Prática Terapêutica | Caminhos Terapêuticos</title>
+  <meta name="description" content="Curso prático para psicoterapeutas e terapeutas holísticos conduzirem a primeira sessão com presença, clareza e profundidade." />
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            nunito: ['Nunito', 'ui-sans-serif', 'system-ui'],
+            lora: ['Lora', 'serif'],
+            sacramento: ['Sacramento', 'cursive']
+          },
+          colors: {
+            brand: {
+              50:  '#f7f1fa',
+              100: '#dfb0f6',
+              200: '#cf98ea',
+              300: '#b97fd7',
+              400: '#a268c4',
+              500: '#8151a1',
+              600: '#694272',
+              700: '#4a2e55',
+              800: '#3b2646',
+              900: '#2d1e37'
+            },
+            accent: {
+              50:  '#ecfbfb',
+              100: '#c0f0f7',
+              200: '#9be7ea',
+              300: '#6fdbd9',
+              400: '#45cdc8',
+              500: '#2bb7ba',
+              600: '#23969a',
+              700: '#1d7a7d',
+              800: '#165e60',
+              900: '#0e4345'
+            },
+            support: {
+              yellow: '#fddc1e',
+              pink:   '#ea386a',
+              green:  '#bad45c',
+              softYellow: '#ffeb5b',
+              softPink:   '#fcc0c5',
+              softGreen:  '#e0f19c'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Sacramento&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-white text-zinc-800 font-nunito">
+  <!-- Barra de anúncio/topo -->
+  <div class="w-full bg-brand-900 text-brand-50 text-center text-sm py-2 px-4">
+    <span class="font-semibold">Turma aberta</span> – vagas limitadas. <a href="#inscricao" class="underline underline-offset-2">Inscreva-se agora</a>.
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-accent-100">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#topo" class="flex items-center gap-3">
+        <img src="logo.png" alt="Logotipo Caminhos Terapêuticos" class="w-10 h-10 rounded-xl object-contain" />
+        <div class="leading-tight">
+          <p class="font-semibold tracking-tight">Caminhos Terapêuticos</p>
+          <p class="text-xs text-zinc-500">Saberes que acolhem, cursos para quem quer florescer com propósito</p>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#sobre" class="hover:text-brand-700">Sobre</a>
+        <a href="#programa" class="hover:text-brand-700">Programa</a>
+        <a href="#para-quem" class="hover:text-brand-700">Para quem</a>
+        <a href="#bonus" class="hover:text-brand-700">Bônus</a>
+        <a href="#faq" class="hover:text-brand-700">Dúvidas</a>
+      </nav>
+      <a href="#inscricao" class="hidden md:inline-block px-4 py-2 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700 shadow-sm transition">Quero me inscrever</a>
+      <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-accent-100" aria-label="Abrir menu">☰</button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-accent-100">
+      <nav class="px-4 py-3 grid gap-3 text-sm bg-white">
+        <a href="#sobre" class="hover:text-brand-700">Sobre</a>
+        <a href="#programa" class="hover:text-brand-700">Programa</a>
+        <a href="#para-quem" class="hover:text-brand-700">Para quem</a>
+        <a href="#bonus" class="hover:text-brand-700">Bônus</a>
+        <a href="#faq" class="hover:text-brand-700">Dúvidas</a>
+        <a href="#inscricao" class="px-4 py-2 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700 shadow-sm transition text-center">Inscrição</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="topo" class="relative overflow-hidden">
+    <div class="absolute inset-0 z-0 bg-gradient-to-b from-accent-100/40 via-white/60 to-white pointer-events-none"></div>
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center relative z-10">
+      <div>
+        <p class="font-sacramento text-2xl md:text-3xl text-accent-800">#FloresçaNaPráticaHolística</p>
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight text-brand-800">
+          A Importância da <span class="text-brand-600">Anamnese</span> na Prática Terapêutica
+        </h1>
+        <p class="mt-5 text-lg text-zinc-800">Transforme o primeiro contato em conexão real. Um curso direto, humano e aplicável para conduzir a anamnese com presença, intenção e profundidade — sem prometer “cura”, e sim <span class="font-semibold">melhoria, clareza e direção</span>.</p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="https://hotm.art/MJ7kO2eH" target="_blank" rel="noopener" class="px-5 py-3 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700 shadow-sm transition">Garantir minha vaga</a>
+          <a href="#programa" class="px-5 py-3 rounded-xl bg-white border border-accent-200 font-medium hover:border-accent-300 transition">Ver o programa</a>
+        </div>
+        <p class="mt-3 text-sm text-zinc-500">Formato: online · 6h de conteúdo prático · materiais para download</p>
+      </div>
+      <div class="relative">
+        <div class="aspect-video w-full rounded-2xl bg-gradient-to-br from-accent-100 via-support-softPink to-support-softYellow shadow-inner flex items-center justify-center">
+          <div class="p-6 text-center">
+            <p class="font-semibold">Vídeo de apresentação</p>
+            <p class="text-sm text-zinc-600">(substitua por embed do YouTube/Vimeo quando tiver)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Provas/Benefícios -->
+  <section class="py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-white/90 border border-accent-100">
+          <h3 class="font-semibold text-lg">Roteiro flexível</h3>
+          <p class="mt-2 text-zinc-600">Estrutura com perguntas-chave + escuta verdadeira para não engessar o encontro.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white/90 border border-accent-100">
+          <h3 class="font-semibold text-lg">Modelos prontos</h3>
+          <p class="mt-2 text-zinc-600">Apostila, slides e questionário inicial para usar nos primeiros atendimentos.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white/90 border border-accent-100">
+          <h3 class="font-semibold text-lg">Condução segura</h3>
+          <p class="mt-2 text-zinc-600">Exemplos reais para lidar com silêncio, fuga, choro, ansiedade e resistência.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Para quem é -->
+  <section id="para-quem" class="py-12 md:py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Para quem é</h2>
+          <p class="mt-3 text-zinc-700">Terapeutas holísticos e psicoterapeutas que desejam conduzir a anamnese com presença, ética e profundidade — mesmo no início da carreira.</p>
+          <ul class="mt-5 grid gap-2 text-zinc-700">
+            <li>• Você se sente insegura(o) nas primeiras sessões</li>
+            <li>• Quer um roteiro que não engesse a escuta</li>
+            <li>• Busca materiais prontos e linguagem clara</li>
+            <li>• Prefere exemplos práticos e aplicáveis</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-2xl bg-accent-50 border border-accent-100">
+          <p class="text-sm uppercase tracking-wide text-brand-700 font-semibold">Resultado esperado</p>
+          <p class="mt-2 text-zinc-800">Mais clareza na coleta de dados, presença corporal/afetiva e alinhamento de expectativas com o cliente — preparando o caminho para intervenções consistentes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programa -->
+  <section id="programa" class="py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">O que você vai aprender</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-2xl bg-white/90 border border-accent-100">
+          <h3 class="font-semibold">Módulo 1 · Fundamentos</h3>
+          <p class="mt-2 text-zinc-600">Postura, ética, setting, limites, linguagem acessível e acolhimento sem prometer “cura”.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white/90 border border-accent-100">
+          <h3 class="font-semibold">Módulo 2 · Roteiro vivo</h3>
+          <p class="mt-2 text-zinc-600">Estrutura de anamnese adaptável + perguntas de aprofundamento que abrem caminhos.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white/90 border border-accent-100">
+          <h3 class="font-semibold">Módulo 3 · Manejo</h3>
+          <p class="mt-2 text-zinc-600">Silêncio, choro, ansiedade, resistência, fuga e como devolver com cuidado e direção.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white/90 border border-accent-100">
+          <h3 class="font-semibold">Módulo 4 · Materiais</h3>
+          <p class="mt-2 text-zinc-600">Apostila, slides e formulário inicial para replicar no Google Forms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bônus -->
+  <section id="bonus" class="py-12 md:py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Bônus</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-accent-50 border border-accent-100">
+          <p class="font-semibold">Checklist da 1ª Sessão</p>
+          <p class="mt-2 text-sm text-zinc-700">Passo a passo objetivo para você se sentir segura(o) do início ao fim.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-accent-50 border border-accent-100">
+          <p class="font-semibold">Roteiro de devolutiva</p>
+          <p class="mt-2 text-sm text-zinc-700">Como devolver percepções com ética, clareza e direcionamento.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-accent-50 border border-accent-100">
+          <p class="font-semibold">Modelos editáveis</p>
+          <p class="mt-2 text-sm text-zinc-700">Slides e formulários para adaptar ao seu jeito de atender.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bônus: prévia (transparência) -->
+  <section class="py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Prévia dos bônus</h2>
+      <div class="mt-6 grid gap-4">
+        <details class="group p-5 rounded-2xl bg-accent-50 border border-accent-100">
+          <summary class="cursor-pointer font-medium list-none flex items-center justify-between">Checklist da 1ª Sessão (resumo)<span class="ml-4">+</span></summary>
+          <div class="mt-3 text-zinc-700 grid gap-2">
+            <p><strong>Pré-sessão:</strong> confirmação/privacidade (on-line), ficha e materiais, acolhimento inicial.</p>
+            <p><strong>Abertura:</strong> objetivo do encontro, contrato/limites e sigilo, pergunta ampla para começar.</p>
+            <p><strong>Exploração:</strong> queixa principal (linha do tempo e intensidade), história relevante (saúde/psiquiátrica/medicações), rotina/sono/alimentação/uso de substâncias, rede de apoio e recursos.</p>
+            <p><strong>Observação clínica:</strong> humor/afeto, fala e pensamento, sinais corporais, risco (ideação auto/heteroagressiva) e encaminhamento quando necessário.</p>
+            <p><strong>Fechamento:</strong> síntese breve, próximos passos, combinados práticos e técnica de autorregulação.</p>
+            <p><strong>Pós-sessão:</strong> registro, hipóteses iniciais e plano de continuidade.</p>
+          </div>
+        </details>
+        <details class="group p-5 rounded-2xl bg-accent-50 border border-accent-100">
+          <summary class="cursor-pointer font-medium list-none flex items-center justify-between">Roteiro de Devolutiva (resumo)<span class="ml-4">+</span></summary>
+          <div class="mt-3 text-zinc-700 grid gap-2">
+            <p><strong>Preparação:</strong> revisar anamnese e organizar achados em 3 blocos: o que entendi · como impacta · por onde começar.</p>
+            <p><strong>Entrega:</strong> começar por recursos/forças, nomear padrões com linguagem não julgadora, validar emoções.</p>
+            <p><strong>Direcionamento:</strong> objetivos terapêuticos (SMART), frequência e métodos, responsabilidades, cuidados e limites, pactuação.</p>
+            <p><strong>Encerramento:</strong> espaço para dúvidas, materiais de apoio e agendamento.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- O que você leva -->
+  <section class="py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Na prática, você sai com</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-white/90 border border-accent-100">
+          <p class="font-semibold">Segurança na condução</p>
+          <p class="mt-2 text-sm text-zinc-700">Roteiro vivo + manejo para silêncio, choro, ansiedade e resistência.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white/90 border border-accent-100">
+          <p class="font-semibold">Estrutura replicável</p>
+          <p class="mt-2 text-sm text-zinc-700">Modelos editáveis e checklist para aplicar já na próxima sessão.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white/90 border border-accent-100">
+          <p class="font-semibold">Devolutivas claras</p>
+          <p class="mt-2 text-sm text-zinc-700">Alinhamento de expectativas e próximos passos sem prometer “cura”.</p>
+        </div>
+      </div>
+      <p class="mt-4 text-xs text-zinc-500">Transparência: depoimentos de alunos serão adicionados ao final da primeira turma.</p>
+    </div>
+  </section>
+
+  <!-- Preço / Chamada -->
+  <section id="inscricao" class="py-12 md:py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Inscreva-se</h2>
+          <p class="mt-3 text-zinc-700">Acesso imediato às aulas gravadas + materiais para download. Suporte por e-mail por 30 dias.</p>
+          <ul class="mt-5 text-zinc-700 grid gap-2">
+            <li>• 4 módulos práticos</li>
+            <li>• Apostila e slides</li>
+            <li>• Formulários editáveis</li>
+            <li>• Checklist de sessão</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-2xl border border-accent-100 bg-accent-50">
+          <div class="flex flex-col sm:flex-row sm:items-end gap-0 sm:gap-2 leading-tight">
+            <span class="text-4xl font-semibold leading-none"><span id="preco-atual">R$ 139,90</span></span>
+            <span class="text-sm text-zinc-600 sm:mb-1 sm:whitespace-nowrap sm:ml-1">à vista ou 12x de R$ 14,47* no cartão</span>
+          </div>
+          <p class="mt-1 text-[11px] text-zinc-500">* Parcelamento e condições definidos pela Hotmart no momento do checkout.</p>
+          <a href="https://hotm.art/MJ7kO2eH" target="_blank" rel="noopener" class="mt-5 block w-full text-center px-5 py-3 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700 shadow-sm transition">Quero garantir minha vaga</a>
+          <p class="mt-3 text-xs text-zinc-500">Link do checkout (Hotmart/Monetizze/Stripe) vai aqui.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Dúvidas frequentes</h2>
+      <div class="mt-6 grid gap-4" id="faqList">
+        <details class="group p-4 rounded-xl bg-white/90 border border-accent-100">
+          <summary class="cursor-pointer font-medium list-none flex items-center justify-between">O curso é para iniciantes?<span class="ml-4">+</span></summary>
+          <div class="mt-2 text-zinc-700">Sim. A linguagem é acessível, com exemplos e materiais prontos para aplicar.</div>
+        </details>
+        <details class="group p-4 rounded-xl bg-white/90 border border-accent-100">
+          <summary class="cursor-pointer font-medium list-none flex items-center justify-between">Há certificado?<span class="ml-4">+</span></summary>
+          <div class="mt-2 text-zinc-700">Sim, emitimos certificado digital ao concluir o curso.</div>
+        </details>
+        <details class="group p-4 rounded-xl bg-white/90 border border-accent-100">
+          <summary class="cursor-pointer font-medium list-none flex items-center justify-between">Como recebo os materiais?<span class="ml-4">+</span></summary>
+          <div class="mt-2 text-zinc-700">Os materiais ficam disponíveis na área do aluno para download.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre / Contato -->
+  <section id="sobre" class="py-12 md:py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Quem conduz</h2>
+          <p class="mt-3 text-zinc-700">Jéssica (Pedagogia) e Fabiane (Administração), psicoterapeutas holísticas e criadoras do projeto <strong>Caminhos Terapêuticos</strong>. Integram abordagem humana, técnica e espiritualidade com responsabilidade — priorizando presença, ética e comunicação clara.</p>
+          <div class="mt-4 text-sm text-zinc-600">@caminhosterap</div>
+        </div>
+        <form class="p-6 rounded-2xl bg-accent-50 border border-accent-100" action="https://formspree.io/f/SEU_ENDPOINT" method="POST">
+          <h3 class="font-semibold">Fale com a gente</h3>
+          <p class="text-sm text-zinc-600">Dúvidas sobre o curso? Envie uma mensagem.</p>
+          <label class="block mt-4 text-sm">Nome<input name="nome" required class="mt-1 w-full px-3 py-2 border border-accent-100 rounded-lg"/></label>
+          <label class="block mt-3 text-sm">E-mail<input type="email" name="email" required class="mt-1 w-full px-3 py-2 border border-accent-100 rounded-lg"/></label>
+          <label class="block mt-3 text-sm">Mensagem<textarea name="mensagem" rows="4" class="mt-1 w-full px-3 py-2 border border-accent-100 rounded-lg"></textarea></label>
+          <button class="mt-4 w-full px-4 py-2 rounded-xl bg-accent-600 text-white font-semibold hover:bg-accent-700 shadow-sm transition">Enviar</button>
+          <p class="mt-2 text-xs text-zinc-500">Este formulário usa Formspree. Substitua o endpoint acima pelo seu.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="py-8 border-t border-accent-100">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-3">
+      <p class="text-sm text-zinc-500">© <span id="ano"></span> Caminhos Terapêuticos — todos os direitos reservados.</p>
+      <div class="text-sm text-zinc-500">Feito com carinho e presença.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Menu mobile
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuBtn) menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Ano dinâmico
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
