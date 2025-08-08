@@ -69,6 +69,9 @@
   </style>
 </head>
 <body class="bg-white text-zinc-800 font-nunito">
+  
+  <!-- Fundo suave em degradê (voltar ao anterior) -->
+  <div aria-hidden="true" class="fixed inset-0 -z-10 bg-gradient-to-b from-accent-50 via-white to-white"></div>
   <!-- Barra de anúncio/topo -->
   <div class="w-full bg-brand-900 text-brand-50 text-center text-sm py-2 px-4">
     <span class="font-semibold">Turma aberta</span> – vagas limitadas. <a href="#inscricao" class="underline underline-offset-2">Inscreva-se agora</a>.
@@ -123,8 +126,21 @@
         
       </div>
       <div class="relative">
-        <div class="aspect-video w-full rounded-2xl shadow-inner bg-center bg-cover" style="background-image:url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUXGBgYGBgYGBgaGhgZGBgYGBgYHCggGBolHBcXITEhJSkrLi4uGiAzODMtNygtLisBCgoKDg0OGhAQGy0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYBAwQCB//EAD0QAAIBAwMCBQMIBgIDAAAAAAECAwAEEQUSITFBURMiYXGBkQYUMqGxBzNCUnKSwdEzYoLD0fDxY5PS/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAHhEBAQEBAQADAQAAAAAAAAAAAAERAhIhMQNBURP/2gAMAwEAAhEDEQA/ALwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABrG0dV2rQh0oLk6mQB9G7lV8j3yYw7k2bP1Jq9r8lYl9w0+o9E2p0q3F0Wqpt0p2gU0rXq1m8r1Jx5vNw3WzOk0G9QmPqfVgN2HnMsb2d3pVf9mN5yUq2m2c1q9bV5T3vCz2QAAAAAAAAAAACcF8mX4Yz3W1xkJk6a7b0R1WqjXz1QzWm1k2a0q2cZ1p9uV0mO9zS9n7b1u9cR3m7w7H2F3q6t3uW9w1Wl8n6n1Y2HnKAAAAAAAAAAAAAAHqPdi7bXWq1bqU1i0bUqfS9m+vJXrOUnE4eU3m3Zr5ZfYx9rjzq3nY+qa6NfXqKm3bU0Z3z1Z4+e6H1O3m3kAAAAAAAAAAAAAAAJuVx7Vb7e8t6bq1qUqk0p0vJm4r0+R5t7mW2kqV1bVxq1vTn8n9bN1n4rT9H6fYx0AAAAAAAAAAAAAAAD0b3O3aq3r9Ktv1a1c1p0p8m+VdTzVYyZbY3q0r9PUpbO3V7b4m+3yAAAAAAAAAAAAAAAAB0k5bX9b6u6r0q1c0qUqU5Xlcl8Z5d8b7mV1mTnVt7d7f4nufQAAAAAAAAAAAAAAAGtO0dU2p0q0qUqU5Tlcl8b5d8b7mX1mTnVt7d7f4nufQAAAAAAAAAAAAAAAB0o5bX9b6u6r0q1c0qUqU5Xlcl8Z5d8b7mV1mTnVt7d7f4nufQAAAAAAAAAAAAAAAB//Z');">
-          <div class="w-full h-full bg-white/10 backdrop-blur-[1px] rounded-2xl"></div>
+        <div class="relative rounded-3xl p-[2px] bg-gradient-to-br from-brand-600 via-accent-400 to-support-yellow shadow-lg">
+          <div id="ytHero" class="relative rounded-2xl overflow-hidden bg-white" data-youtube-url="https://www.youtube.com/watch?v=VIDEO_ID">
+            <div class="relative w-full overflow-hidden" style="padding-top:56.25%">
+              <iframe id="ytIframe" class="absolute inset-0 w-full h-full" src="about:blank" title="Apresentação do curso" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+              <div class="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-900/10 via-accent-900/15 to-white/0"></div>
+            </div>
+          </div>
+          <!-- Borda interna tracejada para um toque artesanal -->
+          <div class="pointer-events-none absolute inset-2 rounded-2xl border border-accent-300/60 border-dashed"></div>
+          <!-- Cantos ornamentais -->
+          <svg class="pointer-events-none absolute -top-3 -left-3 w-10 h-10 text-brand-700 opacity-30" viewBox="0 0 200 200" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M100 20c8 14 14 26 14 38 0 9-3 17-9 23 10-1 21-5 30-12-7 15-19 25-37 29 9 1 20 0 31-3-14 16-31 24-53 24s-39-8-53-24c11 3 22 4 31 3-18-4-30-14-37-29 9 7 20 11 30 12-6-6-9-14-9-23 0-12 6-24 14-38"/></g></svg>
+          <svg class="pointer-events-none absolute -bottom-3 -right-3 w-10 h-10 text-accent-700 opacity-30 rotate-180" viewBox="0 0 200 200" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M100 20c8 14 14 26 14 38 0 9-3 17-9 23 10-1 21-5 30-12-7 15-19 25-37 29 9 1 20 0 31-3-14 16-31 24-53 24s-39-8-53-24c11 3 22 4 31 3-18-4-30-14-37-29 9 7 20 11 30 12-6-6-9-14-9-23 0-12 6-24 14-38"/></g></svg>
+        </div>
+      </div>
+        </div>        </div>
         </div>
         </div>
       </div>
@@ -356,6 +372,18 @@
 
     // Ano dinâmico
     document.getElementById('ano').textContent = new Date().getFullYear();
+    // YouTube hero: parse ID and set autoplay muted embed
+    (function(){
+      const box = document.getElementById('ytHero');
+      if (!box) return;
+      const raw = box.dataset.youtubeUrl || '';
+      const m = raw.match(/[?&]v=([^&]+)/) || raw.match(/youtu\.be\/([^?]+)/) || raw.match(/embed\/([^?]+)/);
+      if (!m) return;
+      const id = m[1];
+      const params = new URLSearchParams({autoplay:1, mute:1, controls:0, rel:0, modestbranding:1, loop:1, playlist:id, playsinline:1});
+      const iframe = document.getElementById('ytIframe');
+      iframe.src = `https://www.youtube.com/embed/${id}?${params.toString()}`;
+    })();
   </script>
 </body>
 </html>
